@@ -115,10 +115,10 @@ setup_project() {
 setup_frontend() {
     echo "🎨 设置前端..."
     
-    cd external/aiqtoolkit-opensource-ui
+    cd ../external/aiqtoolkit-opensource-ui
     
     echo "正在安装前端依赖..."
-    npm install
+    pnpm install
     
     echo "✅ 前端依赖安装完成"
     cd ../..
@@ -199,7 +199,7 @@ sleep 10
 # 启动前端服务
 echo "🎨 启动前端服务..."
 cd external/aiqtoolkit-opensource-ui
-npm run dev &
+pnpm dev &
 FRONTEND_PID=$!
 
 echo ""
@@ -299,3 +299,5 @@ main() {
 # 运行主函数
 main "$@"
 
+mv start.sh NeMo-Agent-Toolkit/start.sh
+mv configs NeMo-Agent-Toolkit
