@@ -198,7 +198,7 @@ sleep 10
 
 # 启动前端服务
 echo "🎨 启动前端服务..."
-cd external/aiqtoolkit-opensource-ui
+cd ../external/aiqtoolkit-opensource-ui
 pnpm dev &
 FRONTEND_PID=$!
 
