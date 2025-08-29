@@ -3,10 +3,6 @@ import type { NextRequest } from 'next/server';
 
 export default function middleware(req: NextRequest) {
 
-   // Log the request
-   console.log('Request:', req);
-
-
   // Skip middleware for static files and auth routes
   if (
     req.nextUrl.pathname.startsWith('/_next/') ||
