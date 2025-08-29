@@ -300,4 +300,5 @@ main() {
 main "$@"
 
 mv start.sh NeMo-Agent-Toolkit/start.sh
+mv stop.sh NeMo-Agent-Toolkit/stop.sh
 mv configs NeMo-Agent-Toolkit
