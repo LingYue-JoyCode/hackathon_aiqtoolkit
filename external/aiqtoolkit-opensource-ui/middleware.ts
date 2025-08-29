@@ -36,10 +36,6 @@ export default function middleware(req: NextRequest) {
       response.headers.set('x-session-id', sessionId);
     }
   } else {
-
-    // Print session cookie
-    console.log('Session cookie:', sessionCookie);
-
     // Add existing session ID to headers for API routes
     if (req.nextUrl.pathname.startsWith('/api/')) {
       response.headers.set('x-session-id', sessionCookie.value);
